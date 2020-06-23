@@ -15,7 +15,7 @@ let evenOrOdd = myArray.map(function (num) {
   return 'odd';
 });
 
-// console.log(evenOrOdd);
+console.log(evenOrOdd);
 
 // for loop version
 

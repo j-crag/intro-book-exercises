@@ -5,7 +5,7 @@
 
 let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
 
-// implement a function
+// my first verson
 
 function oddLengths(arr) {
   let lengths = arr.map(function (element) {
@@ -18,3 +18,18 @@ function oddLengths(arr) {
 }
 
 console.log(oddLengths(arr));
+
+// chained second version
+
+function oddLengths2(arr) {
+  let lengths = arr
+    .map(function (letters) {
+      return letters.length;
+    })
+    .filter((number) => {
+      return number % 2 !== 0;
+    });
+  return lengths;
+}
+
+console.log(oddLengths2(arr));
